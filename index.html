@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+
+	<link rel="stylesheet" href="./font-awsome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="script.js"></script>
+
+</head>
+
+<body style="background-color: black;">
+<div id="main">
+<center>
+
+	<span id="welcome" style="font-family: 'Merienda One', cursive;color: cyan;font-size: 500%;text-align: center;transition-duration: 0.2s;">welcome.</span><br>
+	<input id="search_inp" title="search" placeholder="search" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('search_but').click()" onblur="document.getElementById('input').focus();"></input>
+	<span>w</span>     
+	<span id="search_but" style="display: inline;visibility: visible;color: cyan;background-color: white;" onclick="search_func();">
+		search
+		<i class="fa fa-search" aria-hidden="true"></i>
+	</span>
+
+	<br>
+	<br>
+
+
+<span id="y" class="all" style="color: white;background-color: red;" title="https://www.youtube.com/">
+	youtube
+	<i class="fa fa-youtube-play" aria-hidden="true"></i>
+</span>
+
+<span id="r" class="all" style="color: orange;background-color: white;" title = "https://www.reddit.com/">
+	reddit
+	<i class="fa fa-reddit" aria-hidden="true"></i>
+</span>
+
+<span id="x" class="all" style="color: black;background-color: white;" title = "https://www.xkcd.com/">
+	xkcd
+	<i class="fa fa-file-image-o" aria-hidden="true"></i>
+</span>
+
+<span id="g" class="all" style="color: white;background-color: red;" title = "https://www.gmail.com/">
+	gmail
+	<i class="fa fa-envelope" aria-hidden="true"></i>
+</span>
+
+<span id="h" class="all" style="color: orange;background-color: white;" title = "https://www.reddit.com/r/homelab">
+	/r/homelab
+	<i class="fa fa-reddit" aria-hidden="true"></i>
+</span>
+
+<span id="C" class="all" style="color: green;background-color: #f1f1f1;" title = "https://duckduckgo.com/?q=css%20">
+css
+<i class="fa fa-css3" aria-hidden="true"></i>
+</span>
+
+<span id="H" class="all" style="color: green;background-color: #f1f1f1;" title = "https://duckduckgo.com/?q=html%20">
+html
+<i class="fa fa-html5" aria-hidden="true"></i>
+</span>
+
+<span id="J" class="all" style="color: green;background-color: #f1f1f1;" title = "https://duckduckgo.com/?q=javascript%20">
+js
+<i class="fa fa-jsfiddle" aria-hidden="true"></i>
+</span>
+
+<span id="A" class="all" style="color: cyan;background-color: white;" title = "https://duckduckgo.com/?q=site:wiki.archlinux.org%20">
+arch
+<i class="fa fa-linux" aria-hidden="true"></i>
+</span>
+
+<span id="R" class="all" style="color: orange;background-color: white;" title = "https://duckduckgo.com/?q=site:reddit.com%20">
+reddit
+<i class="fa fa-reddit" aria-hidden="true"></i>
+</span>
+
+<span id="S" class="all" style="color: cyan;background-color: white;" title = "https://duckduckgo.com/?q=">
+search
+<i class="fa fa-search" aria-hidden="true"></i>
+</span>
+
+</div>
+<input type="text" onkeyup="getletter()" autofocus style="opacity: 0;float: bottom;" id ="input" onkeydown="if (event.keyCode == 13) window.location.href = dest" onblur="document.getElementById('search_inp').focus();"></input>
+</body>
+</html>
